@@ -301,6 +301,7 @@ export const SelectArrayInput = (inProps: SelectArrayInputProps) => {
                 margin={margin}
                 className={clsx('ra-input', `ra-input-${source}`, className)}
                 error={fetchError || invalid}
+                size={size}
                 variant={variant}
                 {...sanitizeRestProps(rest)}
             >
@@ -352,7 +353,6 @@ export const SelectArrayInput = (inProps: SelectArrayInputProps) => {
                     disabled={disabled || readOnly}
                     readOnly={readOnly}
                     data-testid="selectArray"
-                    size={size}
                     {...field}
                     {...options}
                     onChange={handleChangeWithCreateSupport}
